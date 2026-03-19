@@ -1,0 +1,61 @@
+/* style.css - dla strony EXAT */
+
+/* Reset i podstawowe style */
+body, html {margin:0; padding:0; font-family: Arial,sans-serif; scroll-behavior:smooth;}
+body {color:#333; line-height:1.6;}
+a {text-decoration:none; color:inherit;}
+
+/* Nagłówek */
+header {background:#1a73e8; color:#fff; text-align:center; padding:80px 20px; position:relative;}
+header h1 {font-size:3em; margin:0;}
+header p {font-size:1.2em; margin:15px 0 25px;}
+header a.cta {background:#fff; color:#1a73e8; padding:15px 30px; border-radius:5px; font-weight:bold; display:inline-block; transition:0.3s;}
+header a.cta:hover {background:#e8e8e8;}
+
+/* Sekcje */
+section {padding:60px 20px; max-width:1200px; margin:0 auto;}
+h2 {text-align:center; margin-bottom:50px; font-size:2.2em;}
+
+/* Usługi */
+.services {display:flex; flex-wrap:wrap; justify-content:space-around; gap:25px;}
+.service {flex:1 1 300px; background:#f4f4f4; border-radius:10px; text-align:center; padding:25px; transition:0.3s;}
+.service:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.15);}
+.service img {width:70px; height:70px; margin-bottom:15px;}
+.service h3 {margin-top:0;}
+.service button {margin-top:15px; padding:12px 20px; border:none; border-radius:5px; background:#1a73e8; color:#fff; cursor:pointer; transition:0.3s;}
+.service button:hover {background:#155ab6;}
+
+/* Galeria */
+.gallery {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
+.gallery img {max-width:100%; border-radius:10px; cursor:pointer; transition:0.3s;}
+.gallery img:hover {opacity:0.8;}
+
+/* Lightbox */
+#lightbox {position:fixed; display:none; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index:1000;}
+#lightbox img {max-width:90%; max-height:90%; border-radius:10px;}
+#lightbox span {position:absolute; top:20px; right:30px; font-size:2.5em; color:#fff; cursor:pointer;}
+
+/* Opinie */
+.reviews {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px;}
+.review {flex:1 1 300px; background:#f4f4f4; padding:25px; border-radius:10px; text-align:center; font-style:italic; transition:0.3s;}
+.review strong {display:block; margin-top:15px; font-style:normal; color:#1a73e8;}
+.review:hover {transform:translateY(-3px);}
+
+/* Formularz */
+form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:15px;}
+input, textarea {padding:12px; border:1px solid #ccc; border-radius:5px; width:100%;}
+button.submit {padding:15px; background:#1a73e8; color:#fff; border:none; border-radius:5px; cursor:pointer; font-weight:bold; transition:0.3s;}
+button.submit:hover {background:#155ab6;}
+
+/* Stopka */
+footer {background:#222; color:#fff; padding:30px 20px; text-align:center;}
+footer a {color:#1a73e8; margin:0 10px;}
+footer a:hover {text-decoration:underline;}
+
+/* Scroll top */
+#scrollTop {position:fixed; bottom:30px; right:30px; background:#1a73e8; color:#fff; padding:12px 15px; border-radius:50%; cursor:pointer; display:none; font-size:1.5em; z-index:999;}
+
+/* Media queries */
+@media(max-width:768px){
+    .services, .reviews {flex-direction:column; align-items:center;}
+}
