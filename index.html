@@ -4,174 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EXAT - Konstrukcje i Wynajem Sprzętu</title>
-<style>
-/* Reset i podstawowe style */
-body, html {margin:0; padding:0; font-family: Arial,sans-serif; scroll-behavior:smooth;}
-body {color:#333; line-height:1.6;}
-a {text-decoration:none; color:inherit;}
-
-/* Nagłówek */
-header {background:#1a73e8; color:#fff; text-align:center; padding:80px 20px; position:relative;}
-header h1 {font-size:3em; margin:0;}
-header p {font-size:1.2em; margin:15px 0 25px;}
-header a.cta {background:#fff; color:#1a73e8; padding:15px 30px; border-radius:5px; font-weight:bold; display:inline-block; transition:0.3s;}
-header a.cta:hover {background:#e8e8e8;}
-
-/* Usługi */
-section {padding:60px 20px; max-width:1200px; margin:0 auto;}
-h2 {text-align:center; margin-bottom:50px; font-size:2.2em;}
-
-.services {display:flex; flex-wrap:wrap; justify-content:space-around; gap:25px;}
-.service {flex:1 1 300px; background:#f4f4f4; border-radius:10px; text-align:center; padding:25px; transition:0.3s;}
-.service:hover {transform:translateY(-5px); box-shadow:0 4px 15px rgba(0,0,0,0.15);}
-.service img {width:70px; height:70px; margin-bottom:15px;}
-.service h3 {margin-top:0;}
-.service button {margin-top:15px; padding:12px 20px; border:none; border-radius:5px; background:#1a73e8; color:#fff; cursor:pointer; transition:0.3s;}
-.service button:hover {background:#155ab6;}
-
-/* Galeria */
-.gallery {display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
-.gallery img {max-width:100%; border-radius:10px; cursor:pointer; transition:0.3s;}
-.gallery img:hover {opacity:0.8;}
-
-/* Lightbox */
-#lightbox {position:fixed; display:none; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); justify-content:center; align-items:center; z-index:1000;}
-#lightbox img {max-width:90%; max-height:90%; border-radius:10px;}
-#lightbox span {position:absolute; top:20px; right:30px; font-size:2.5em; color:#fff; cursor:pointer;}
-
-/* Opinie */
-.reviews {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; margin-top:40px;}
-.review {flex:1 1 300px; background:#f4f4f4; padding:25px; border-radius:10px; text-align:center; font-style:italic; transition:0.3s;}
-.review strong {display:block; margin-top:15px; font-style:normal; color:#1a73e8;}
-.review:hover {transform:translateY(-3px);}
-
-/* Formularz */
-form {max-width:600px; margin:0 auto; display:flex; flex-direction:column; gap:15px;}
-input, textarea {padding:12px; border:1px solid #ccc; border-radius:5px; width:100%;}
-button.submit {padding:15px; background:#1a73e8; color:#fff; border:none; border-radius:5px; cursor:pointer; font-weight:bold; transition:0.3s;}
-button.submit:hover {background:#155ab6;}
-
-/* Stopka */
-footer {background:#222; color:#fff; padding:30px 20px; text-align:center;}
-footer a {color:#1a73e8; margin:0 10px;}
-footer a:hover {text-decoration:underline;}
-
-/* Scroll top */
-#scrollTop {position:fixed; bottom:30px; right:30px; background:#1a73e8; color:#fff; padding:12px 15px; border-radius:50%; cursor:pointer; display:none; font-size:1.5em; z-index:999;}
-
-/* Media queries */
-@media(max-width:768px){
-    .services, .reviews {flex-direction:column; align-items:center;}
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-<h1>EXAT – konstrukcje stalowe, balustrady i wynajem sprzętu</h1>
-<p>Tworzymy trwałe konstrukcje, balustrady nierdzewne i szklane oraz oferujemy wynajem maszyn z operatorem.</p>
-<a href="#kontakt" class="cta">Skontaktuj się z nami</a>
+  <h1>EXAT</h1>
+  <p>Konstrukcje stalowe, balustrady nierdzewne i szklane oraz wynajem sprzętu z operatorem</p>
+  <a href="#kontakt" class="cta">Skontaktuj się z nami</a>
 </header>
 
-<section id="uslugi">
-<h2>Nasze usługi</h2>
-<div class="services">
+<section id="oferta">
+  <h2>Nasza oferta</h2>
+  <div class="services">
     <div class="service">
-        <img src="https://via.placeholder.com/70?text=🛠" alt="Konstrukcje stalowe">
-        <h3>Konstrukcje stalowe</h3>
-        <p>Hale, wiaty, antresole – projekt i montaż od A do Z.</p>
-        <button onclick="location.href='#kontakt'">Zapytaj o wycenę</button>
-    </div>
-    <div class="service">
-        <img src="https://via.placeholder.com/70?text=🪟" alt="Balustrady szklane">
-        <h3>Balustrady nierdzewne i szklane</h3>
-        <p>Elegancja i bezpieczeństwo w każdym projekcie – dla domów, biur i obiektów przemysłowych.</p>
-        <button onclick="location.href='#kontakt'">Zapytaj o wycenę</button>
+      <img src="https://via.placeholder.com/70?text=🛠" alt="Konstrukcje stalowe">
+      <h3>Konstrukcje stalowe</h3>
+      <p>Hale, wiaty, antresole – projekt i montaż od A do Z.</p>
     </div>
     <div class="service">
-        <img src="https://via.placeholder.com/70?text=🚜" alt="Wynajem sprzętu">
-        <h3>Wynajem sprzętu z operatorem</h3>
-        <p>Podnośniki koszowe, koparki, koparko-ładowarki – szybko i bezpiecznie.</p>
-        <button onclick="location.href='#kontakt'">Zapytaj o wycenę</button>
+      <img src="https://via.placeholder.com/70?text=🪟" alt="Balustrady">
+      <h3>Balustrady nierdzewne i szklane</h3>
+      <p>Elegancja i bezpieczeństwo w każdym projekcie.</p>
     </div>
-</div>
-</section>
-
-<section id="galeria">
-<h2>Realizacje</h2>
-<div class="gallery">
-    <img src="https://via.placeholder.com/400x300?text=Konstrukcja+stalowa" alt="Konstrukcja stalowa">
-    <img src="https://via.placeholder.com/400x300?text=Balustrada+szklana" alt="Balustrada szklana">
-    <img src="https://via.placeholder.com/400x300?text=Wynajem+sprzętu" alt="Wynajem sprzętu">
-</div>
-</section>
-
-<section id="opinie">
-<h2>Co mówią nasi klienci</h2>
-<div class="reviews">
-    <div class="review">
-        <p>"EXAT wykonał dla nas konstrukcję stalową w hali magazynowej. Wszystko zgodnie z terminem i w pełni profesjonalnie!"</p>
-        <strong>- Jan Kowalski, firma logistyczna</strong>
+    <div class="service">
+      <img src="https://via.placeholder.com/70?text=🚜" alt="Wynajem sprzętu">
+      <h3>Wynajem sprzętu</h3>
+      <p>Podnośniki koszowe, koparki, koparko-ładowarki z operatorem.</p>
     </div>
-    <div class="review">
-        <p>"Balustrady szklane zamontowane przez EXAT wyglądają fantastycznie i są solidne. Gorąco polecam!"</p>
-        <strong>- Anna Nowak, klient prywatny</strong>
-    </div>
-    <div class="review">
-        <p>"Wynajem koparko-ładowarki z operatorem przebiegł bezproblemowo. Fachowa obsługa i szybka realizacja."</p>
-        <strong>- Marek Wiśniewski, budowa domu</strong>
-    </div>
-</div>
-</section>
-
-<section id="o-nas">
-<h2>O nas</h2>
-<p>EXAT to firma działająca w branży konstrukcji stalowych, balustrad nierdzewnych i szklanych oraz wynajmu sprzętu budowlanego z operatorem. Łączymy jakość, bezpieczeństwo i terminowość. Nasze doświadczenie pozwala realizować projekty małe i duże, zawsze z efektywnym podejściem i profesjonalizmem.</p>
+  </div>
 </section>
 
 <section id="kontakt">
-<h2>Kontakt</h2>
-<form action="mailto:twojemail@domena.pl" method="post" enctype="text/plain">
-<input type="text" name="Imie" placeholder="Imię i nazwisko" required>
-<input type="email" name="Email" placeholder="Adres e-mail" required>
-<input type="text" name="Telefon" placeholder="Telefon">
-<textarea name="Wiadomosc" rows="5" placeholder="Treść wiadomości" required></textarea>
-<button type="submit" class="submit">Wyślij</button>
-</form>
+  <h2>Kontakt</h2>
+  <form action="mailto:twojemail@domena.pl" method="post" enctype="text/plain">
+    <input type="text" name="Imie" placeholder="Imię i nazwisko" required>
+    <input type="email" name="Email" placeholder="Adres e-mail" required>
+    <input type="text" name="Telefon" placeholder="Telefon">
+    <textarea name="Wiadomosc" rows="5" placeholder="Treść wiadomości" required></textarea>
+    <button type="submit" class="submit">Wyślij</button>
+  </form>
 </section>
 
 <footer>
-<p>&copy; 2026 EXAT. Wszystkie prawa zastrzeżone.</p>
-<p><a href="#uslugi">Usługi</a> | <a href="#opinie">Opinie</a> | <a href="#o-nas">O nas</a> | <a href="#kontakt">Kontakt</a></p>
+  <p>&copy; 2026 EXAT. Wszystkie prawa zastrzeżone.</p>
 </footer>
-
-<div id="scrollTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">&#8679;</div>
-
-<!-- Lightbox -->
-<div id="lightbox" onclick="this.style.display='none'">
-<span onclick="document.getElementById('lightbox').style.display='none'">&times;</span>
-<img id="lightbox-img" src="">
-</div>
-
-<script>
-// Lightbox
-const galleryImages = document.querySelectorAll('.gallery img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightbox-img');
-galleryImages.forEach(img => {
-    img.addEventListener('click', () => {
-        lightbox.style.display='flex';
-        lightboxImg.src = img.src;
-    });
-});
-
-// Scroll top button
-const scrollTopBtn = document.getElementById('scrollTop');
-window.addEventListener('scroll', () => {
-    if(window.scrollY > 300){scrollTopBtn.style.display='block';} 
-    else{scrollTopBtn.style.display='none';}
-});
-</script>
 
 </body>
 </html>
