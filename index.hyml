@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXAT - Konstrukcje i Wynajem Sprzętu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>EXAT</h1>
+  <p>Konstrukcje stalowe, balustrady nierdzewne i szklane oraz wynajem sprzętu z operatorem</p>
+  <a href="#kontakt" class="cta">Skontaktuj się z nami</a>
+</header>
+
+<section id="oferta">
+  <h2>Nasza oferta</h2>
+  <div class="services">
+    <div class="service">
+      <img src="https://via.placeholder.com/70?text=🛠" alt="Konstrukcje stalowe">
+      <h3>Konstrukcje stalowe</h3>
+      <p>Hale, wiaty, antresole – projekt i montaż od A do Z.</p>
+    </div>
+    <div class="service">
+      <img src="https://via.placeholder.com/70?text=🪟" alt="Balustrady">
+      <h3>Balustrady nierdzewne i szklane</h3>
+      <p>Elegancja i bezpieczeństwo w każdym projekcie.</p>
+    </div>
+    <div class="service">
+      <img src="https://via.placeholder.com/70?text=🚜" alt="Wynajem sprzętu">
+      <h3>Wynajem sprzętu</h3>
+      <p>Podnośniki koszowe, koparki, koparko-ładowarki z operatorem.</p>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <h2>Kontakt</h2>
+  <form action="mailto:twojemail@domena.pl" method="post" enctype="text/plain">
+    <input type="text" name="Imie" placeholder="Imię i nazwisko" required>
+    <input type="email" name="Email" placeholder="Adres e-mail" required>
+    <input type="text" name="Telefon" placeholder="Telefon">
+    <textarea name="Wiadomosc" rows="5" placeholder="Treść wiadomości" required></textarea>
+    <button type="submit" class="submit">Wyślij</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 EXAT. Wszystkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
